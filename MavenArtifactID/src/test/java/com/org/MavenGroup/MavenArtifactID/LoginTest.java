@@ -12,6 +12,9 @@ public class LoginTest {
 	//public static void main(String[] args)
 	{
 		System.out.println("pwd typed");
+		System.out.println("pwd typed"); 
+		
+		System.out.println("pwd typed");
 		System.out.println("pwd typed");
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kaiva\\Downloads\\chromedriver_win32\\chromedriver.exe");
