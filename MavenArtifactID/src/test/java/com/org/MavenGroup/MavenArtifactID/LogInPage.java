@@ -5,21 +5,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginTest {
+public class LogInPage {
+	
+	
 
 	@Test
 	public void TC1_Login()
 	//public static void main(String[] args)
 	{
-		System.out.println("pwd typed");
-		System.out.println("pwd typed"); 
+	
 		
-		System.out.println("pwd typed");
-		System.out.println("pwd typed");
-		
-		System.out.println("pwd typed");
-		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kaiva\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\libs\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 
 		driver.get("https://teamswebstaging.azurewebsites.net");
@@ -45,12 +41,16 @@ public class LoginTest {
 			//System.out.println("pwd typed");
 		
 			// test
-			 String actualTitle = driver.getTitle();
-						 
+			String actualTitle = driver.getTitle();
+			 
 			 String expectedTitle = "Teams Hub";
 			 if(actualTitle.equalsIgnoreCase(expectedTitle))
 			 System.out.println("Title Matched - Test Case Passed");
 			 else
 			 System.out.println("Title didn't match - Test Case Failed");
+				System.out.println("Title didn't match - Test Case Failed");
+	
 	}
+		
 }
+
